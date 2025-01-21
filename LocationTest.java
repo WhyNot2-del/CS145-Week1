@@ -12,6 +12,7 @@ public class LocationTest {
     public static void main(String[] args) {
 
         // initializes variables
+        /* Probably create an object from the constructor class */
         Scanner line = new Scanner(System.in);
         Scanner token = new Scanner(System.in);
         Integer column = 0;
@@ -39,6 +40,12 @@ public class LocationTest {
                 largestNum[i][j] = nums;
             }  // ends nested for loop
         }  // ends for loop
+
+        /* Call method from manager class {Honestly how I write this section is determined upon how the manager class is set up} */
+
+        /* Example of what the output may look like. Will add a little visual of the array with the largest number in brackets which may be best done with a method
+         * in the Manager class. */
+         // System.out.printf("%s%d", "The largest number is: ", Object.getMaxValue);
 
     }  // ends main method
 }  // ends LocationTest class
