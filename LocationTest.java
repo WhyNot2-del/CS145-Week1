@@ -1,4 +1,4 @@
-// Names: Brody Weinkauf, Jackson [LastName], Christopher [Lastname]
+// Names: Brody Weinkauf, Jackson Jenks, Christopher Waschke
 // Class: CS 145
 // Date: 1/21/2025 12:05PM
 // Assignment 1
@@ -41,7 +41,7 @@ public class LocationTest {
             }  // ends nested for loop
         }  // ends for loop
 
-        /* Call method from manager class {Honestly how I write this section is determined upon how the manager class is set up} */
+        // {ObjectName} = LocationManager.locatelargest(largestNum[][]);
 
         /* Example of what the output may look like. Will add a little visual of the array with the largest number in brackets which may be best done with a method
          * in the Manager class. */
