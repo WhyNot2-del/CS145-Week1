@@ -45,7 +45,7 @@ public class LocationTest {
 
         /* Example of what the output may look like. Will add a little visual of the array with the largest number in brackets which may be best done with a method
          * in the Manager class. */
-         // System.out.printf("%s%d", "The largest number is: ", Object.getMaxValue);
+         // System.out.printf("%s%d%s%d%s%d%s", "The largest number is: ", Object.getMaxValue(), "Located at (", Object.getRow(), ",", Object.getColumn(), ")");
 
     }  // ends main method
 }  // ends LocationTest class
