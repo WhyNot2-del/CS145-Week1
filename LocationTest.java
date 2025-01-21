@@ -19,5 +19,13 @@ public class LocationTest {
         String lines = "";
         int nums = 0;
 
+        //  Scanner reads user input to create the multi-dimensional array parameters
+        System.out.println("Please enter the # of rows");
+        row = token.nextInt();
+        System.out.println("Please enter the # of columns");
+        column = token.nextInt();
+
+
+        
     }  // ends main method
 }  // ends LocationTest class
