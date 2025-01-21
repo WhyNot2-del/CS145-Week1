@@ -16,10 +16,10 @@ public class LocationTest {
         //  {TestClassName} Largest = new {TestClassName()};
         Scanner line = new Scanner(System.in);
         Scanner token = new Scanner(System.in);
-        Integer column = 0;
-        Integer row = 0;
-        String lines = "";
-        int nums = 0;
+        Integer column;
+        Integer row;
+        String lines;
+        double nums;
 
         //  Scanner reads user input to create the multi-dimensional array parameters
         System.out.println("Please enter the # of rows");
@@ -27,7 +27,7 @@ public class LocationTest {
         System.out.println("Please enter the # of columns");
         column = token.nextInt();
 
-        int largestNum[][] = new int[row][column];
+        double largestNum[][] = new double[row][column];
 
         //  takes in user inputs and adds each number to the correct location in the multi-dimensional array
         for (int i = 0; i < row; i++) {
@@ -37,16 +37,16 @@ public class LocationTest {
             String digits[] = lines.split(" ");
             //  parses the String variables into ints and places them into the correct location in the multi-dimensional array
             for (int j = 0; j < column; j++) {
-                nums  = Integer.parseInt(digits[j]);
+                nums  = Double.parseDouble(digits[j]);
                 largestNum[i][j] = nums;
             }  // ends nested for loop
         }  // ends for loop
 
-        // {ObjectName} = LocationManager.locatelargest(largestNum[][]);
+        location biggest = LocationManager.locatelargest(largestNum[][]);
 
         /* Example of what the output may look like. Will add a little visual of the array with the largest number in brackets which may be best done with a method
          * in the Manager class. */
-         // System.out.printf("%s%d%s%d%s%d%s", "The largest number is: ", Object.getMaxValue(), " Located at (", Object.getRow(), ",", Object.getColumn(), ")");
+        System.out.printf("%s%d%s%d%s%d%s", "The largest number is: ", biggest.getMaxValue(), " Located at (", biggest.getRow(), ",", biggest.getColumn(), ")");
 
     }  // ends main method
 }  // ends LocationTest class
