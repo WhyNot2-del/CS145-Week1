@@ -1,6 +1,6 @@
 // Names: Brody Weinkauf, Jackson Jenks, Christopher Waschke
 // Class: CS 145
-// Date: 1/21/2025 12:05PM
+// Date: 1/21/2025 14:02PM
 // Assignment 1
 // Purpose: To take in user input and create a multi-dimensional array
 
@@ -13,6 +13,7 @@ public class LocationTest {
 
         // initializes variables
         /* Probably create an object from the constructor class */
+        //  {TestClassName} Largest = new {TestClassName()};
         Scanner line = new Scanner(System.in);
         Scanner token = new Scanner(System.in);
         Integer column = 0;
