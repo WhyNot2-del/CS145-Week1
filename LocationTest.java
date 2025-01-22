@@ -12,12 +12,14 @@ public class LocationTest {
     public static void main(String[] args) {
 
         // initializes variables
+        /* Probably create an object from the constructor class */
+        //  {TestClassName} Largest = new {TestClassName()};
         Scanner line = new Scanner(System.in);
         Scanner token = new Scanner(System.in);
-        Integer column;
-        Integer row;
-        String lines;
-        double nums;
+        Integer column = 0;
+        Integer row = 0;
+        String lines = "";
+        double nums = 0;
 
         //  Scanner reads user input to create the multi-dimensional array parameters
         System.out.println("Please enter the # of rows");
@@ -40,11 +42,9 @@ public class LocationTest {
             }  // ends nested for loop
         }  // ends for loop
 
-        //  creates and sets data to biggest object
-        location biggest = LocationManager.locatelargest(largestNum[][]);
-
-        //  Outputs biggest number to user
-        System.out.printf("%s%d%s%d%s%d%s", "The largest number is: ", biggest.getMaxValue(), " Located at (", biggest.getRow(), ",", biggest.getColumn(), ")");
+        // Get our largest via the locateLargest method, and then print it out.
+        Location biggest = LocationManager.locateLargest(largestNum);
+        System.out.printf("Largest value was %.2f, at row %d and column %d\n", biggest.getMaxValue(), biggest.getRow(), biggest.getColumn());
 
     }  // ends main method
 }  // ends LocationTest class
